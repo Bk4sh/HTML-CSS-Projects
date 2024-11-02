@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  background-color: #222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+}
+
+.profile-card .img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background-color: #222;
+  padding: 3px;
+  position: relative;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card .img .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.profile-card .text-data .name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.profile-card .text-data .designation {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+}
+
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.profile-card .media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 42px;
+  width: 42px;
+  font-size: 24px;
+  color: #ffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.profile-card .media-buttons .link.facebook {
+  background-color: #3b5998; /* Initial color for Facebook */
+}
+
+.profile-card .media-buttons .link.facebook:hover,
+.profile-card .media-buttons .link.facebook:active {
+  background-color: #3b5980; /* Hover color for Facebook */
+}
+
+.profile-card .media-buttons .link.twitter {
+  background-color: #1da1f2; /* Initial color for Twitter */
+}
+
+.profile-card .media-buttons .link.twitter:hover,
+.profile-card .media-buttons .link.twitter:active {
+  background-color: #1481c3; /* Hover color for Twitter */
+}
+
+.profile-card .media-buttons .link.instagram {
+  background-color: #c13584; /* Initial color for Instagram */
+}
+
+.profile-card .media-buttons .link.instagram:hover,
+.profile-card .media-buttons .link.instagram:active {
+  background-color: #a53374; /* Hover color for Instagram */
+}
+
+.profile-card .media-buttons .link.youtube {
+  background-color: #ff0000; /* Initial color for YouTube */
+}
+
+.profile-card .media-buttons .link.youtube:hover,
+.profile-card .media-buttons .link.youtube:active {
+  background-color: #cc0000; /* Hover color for YouTube */
+}
+
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.profile-card .buttons .button {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 28px;
+  background-color: #495057;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.buttons .button:hover {
+  background-color: #343a40;
+}
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  /* gap: 18px; */
+}
+
+.profile-card .analytics .data {
+  font-size: 18px;
+  color: #333;
+  padding: 0 18px;
+  border-right: 2px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+}
+
+.profile-card .analytics .data:last-child {
+  border-right: none;
+}
+
+.profile-card .analytics .data i {
+  font-size: 24px;
+  margin-right: 5px;
+}
