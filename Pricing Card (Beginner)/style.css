@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+
+.container {
+  max-width: 460px;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.container .title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.container .price {
+  font-size: 2.2rem;
+  color: #007fff;
+  font-weight: 700;
+  margin-top: 1.6rem;
+}
+
+.container span {
+  font-size: 1.6rem;
+}
+
+.container .description {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-top: 1.6rem;
+}
+
+.container .offer {
+  display: block;
+  margin: 1.4rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e7ec;
+}
+
+.container .button {
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #007fff;
+  padding: 15px 0;
+  border-radius: 34px;
+  width: 100%;
+  color: #ebcece;
+  margin-top: 2.5rem;
+  transition: all 0.2s ease;
+}
+
+.container .button:hover {
+  background-color: #0d74da;
+}
+
+.container::after {
+  content: "Special Offer!";
+  font-size: 0.9rem;
+  color: #e6c8c8;
+  font-weight: 700;
+  position: absolute;
+  background-color: #007fff;
+  padding: 4px 34px;
+  top: 6.8%;
+  left: -8%;
+  transform: rotate(-45deg);
+}
